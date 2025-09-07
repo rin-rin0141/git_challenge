@@ -1,0 +1,51 @@
+168de@DESKTOP-9MKML3A MINGW64 ~ (main)
+$ cd git_challenge
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$ git init
+Initialized empty Git repository in C:/Users/168de/git_challenge/.git/
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$ touch hello_world.txt
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$ echo "Hello, world!" >> hello_world.txt
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$ git add  hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$ git commit -m"一階堂ふみ"
+[main (root-commit) 49489d1] 一階堂ふみ
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$ git add  hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$ git commit -m"二階堂ふみ"
+[main f6824ee] 二階堂ふみ
+ 1 file changed, 1 insertion(+)
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$ git log
+commit f6824eec3d9c1c09e2d9989b2ef854f294158064 (HEAD -> main)
+Author: rinrin-0141 <168decade@gmail.com>
+Date:   Sun Aug 31 15:39:58 2025 +0900
+
+    二階堂ふみ
+
+commit 49489d1ed4112354ce93f5f6aaae6cb4a7adff83
+Author: rinrin-0141 <168decade@gmail.com>
+Date:   Sun Aug 31 15:35:00 2025 +0900
+
+    一階堂ふみ
+
+168de@DESKTOP-9MKML3A MINGW64 ~/git_challenge (main)
+$
